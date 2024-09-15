@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Product_Details">
+
+<LinearLayout
+    android:layout_alignParentTop="true"
+    android:id="@+id/top"
+    android:background="#2196F3"
+    android:layout_width="match_parent"
+    android:paddingStart="10dp"
+    android:layout_height="40dp">
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/left_arrow_svgrepo_com"
+        android:id="@+id/back"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   Order Summary"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_gravity="center"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="end">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"
+                    android:padding="5dp"
+
+                    app:cardCornerRadius="50dp">
+
+                    <ImageView
+                        android:id="@+id/share"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/share_icon" />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/product_image123"
+                android:layout_width="200dp"
+                android:layout_height="300dp"
+                android:padding="5dp"
+                android:src="@drawable/safola" />
+
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#FFFFFF"
+    android:elevation="5dp">
+
+</LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:maxLines="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="#18651B"
+                    android:layout_alignParentLeft="true"
+                    android:text="Saffola : 100% Vegetable Oil"
+                    android:id="@+id/product_name"/>
+
+                <TextView
+                    android:id="@+id/total_price"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#4CAF50"
+                    android:text="Rs.500"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹500"
+                    android:textColor="@color/black"
+                    android:id="@+id/product_price"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_margin="5dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+                        android:background="@drawable/bg_color">
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textColor="#AC0F03"
+                            android:textSize="25sp"
+                            android:text="-"
+                            android:id="@+id/quantity_minus"/>
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textSize="14sp"
+                            android:textColor="@color/black"
+                            android:id="@+id/quantity"/>
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:text="+"
+                            android:gravity="center"
+                            android:textColor="#047308"
+                            android:textSize="20sp"
+                            android:id="@+id/quantity_plus"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="12sp"
+                android:id="@+id/discription"
+                android:text="Saffola is a well-known and trusted brand in the world of cooking oils, recognized for its commitment to promoting heart health through its range of high-quality edible oils. Saffola Oil is a popular choice among health-conscious individuals and culinary enthusiasts alike, offering a variety of options to suit different cooking needs."/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rating="3"
+                android:max="5"
+                android:id="@+id/rating"
+                style="?android:attr/ratingBarStyleIndicator"
+                android:progressTint="#FFCC01"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"
+                android:textColor="#3F51B5"
+                android:text="400 ratings"/>
+        </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Buy now"
+        android:textColor="@color/white"
+        android:backgroundTint="#D54B1F"
+        android:drawableEnd="@drawable/right_arrow" />
+</RelativeLayout>

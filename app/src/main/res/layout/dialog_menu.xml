@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#BBE0FB"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#09406C">
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_marginEnd="20dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#A3C9E6"
+                    app:cardCornerRadius="50dp"
+                    android:elevation="50dp"
+                   >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/demo_user" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aman"
+                    android:id="@+id/username_menu"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/artifika"
+                android:text="Good morning"
+                android:textSize="15dp" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="46dp"
+                android:layout_height="match_parent"
+                android:gravity="end">
+
+                <ImageView
+                    android:id="@+id/closesymbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/close" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.skydoves.elasticviews.ElasticButton
+            android:id="@+id/menu_home"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:textSize="15sp"
+            android:background="#0B5B9C"
+            android:drawableStart="@drawable/home_1_svgrepo_com"
+            android:drawableEnd="@drawable/arrow_sm_right_svgrepo_com"
+            android:text="Home"
+            android:textColor="@color/white" />
+        <com.skydoves.elasticviews.ElasticButton
+            android:id="@+id/menu_cart"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#0B5B9C"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:drawableStart="@drawable/cart_shopping_svgrepo_com"
+            android:drawableEnd="@drawable/arrow_sm_right_svgrepo_com"
+            android:text="Cart"
+            android:textColor="@color/white" />
+        <com.skydoves.elasticviews.ElasticButton
+            android:id="@+id/menu_order"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#0B5B9C"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:drawableStart="@drawable/order_svgrepo_com"
+            android:drawableEnd="@drawable/arrow_sm_right_svgrepo_com"
+            android:text="My Orders"
+            android:textColor="@color/white" />
+        <com.skydoves.elasticviews.ElasticButton
+            android:id="@+id/menu_notification"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#0B5B9C"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:drawableStart="@drawable/notification_svgrepo_com"
+            android:drawableEnd="@drawable/arrow_sm_right_svgrepo_com"
+            android:text="My Notification"
+            android:textColor="@color/white" />
+
+        <com.skydoves.elasticviews.ElasticButton
+            android:id="@+id/menu_Wallet"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#0B5B9C"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:drawableStart="@drawable/wallet_svgrepo_com"
+            android:drawableEnd="@drawable/arrow_sm_right_svgrepo_com"
+            android:text="My Wallet"
+            android:textColor="@color/white" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+            <com.skydoves.elasticviews.ElasticButton
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="#BBE0FB"
+                android:drawableEnd="@drawable/logout_svgrepo_com"
+                android:gravity="center_vertical"
+                android:paddingStart="5dp"
+                android:text="Logout"
+                android:paddingEnd="10dp"
+                android:textColor="#F60505"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="#00000000"
+        android:id="@+id/close">
+
+    </LinearLayout>
+
+</LinearLayout>

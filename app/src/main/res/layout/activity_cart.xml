@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Cart_Activity">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_above="@id/bottom"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   app:cardCornerRadius="10dp">
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:padding="5dp"
+                       android:background="#E6F3FD">
+                       <ImageView
+                           android:layout_width="100dp"
+                           android:layout_height="120dp"
+                           android:padding="5dp"
+                           android:id="@+id/cart_image"
+                           android:scaleType="fitCenter"
+                           android:src="@drawable/logo"/>
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:orientation="vertical"
+                           android:layout_marginLeft="10dp"
+                           android:layout_marginTop="20dp">
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="Saffola"
+                               android:textSize="15sp"
+                               android:id="@+id/cart_name"
+                               android:textColor="@color/black"
+                               android:textStyle="bold"/>
+                           <LinearLayout
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content">
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="Unit: "
+                                   android:textSize="13sp"
+                                   android:textStyle="bold"/>
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="kg/50"
+                                   android:textSize="13sp"
+                                   android:id="@+id/Unit"/>
+                           </LinearLayout>
+                           <LinearLayout
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content">
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="Quantity: "
+                                   android:textSize="13sp"
+                                   android:textStyle="bold"/>
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="2"
+                                   android:textSize="13sp"
+                                   android:id="@+id/quant"/>
+                           </LinearLayout>
+
+
+                       </LinearLayout>
+                   </LinearLayout>
+               </androidx.cardview.widget.CardView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Delivery Address"
+                           android:textSize="15sp"
+                           android:textColor="@color/black"
+                           android:textStyle="bold"/>
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:gravity="end">
+                          <ImageView
+                              android:layout_width="30dp"
+                              android:layout_height="30dp"
+                              android:src="@drawable/map"
+                              android:id="@+id/location_icon"
+                              android:layout_marginRight="10dp"/>
+                      </LinearLayout>
+                   </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="10dp">
+                            <EditText
+                                android:drawableStart="@drawable/person"
+                                android:layout_width="300dp"
+                                android:layout_height="40dp"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:background="@drawable/editbox_style"
+                                android:hint="Full Name"
+                                android:paddingStart="10dp"
+                                android:layout_marginBottom="15dp"
+                                />
+                            <EditText
+                                android:drawableStart="@drawable/phone"
+                                android:layout_width="300dp"
+                                android:layout_height="40dp"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:background="@drawable/editbox_style"
+                                android:hint="Phone Number"
+                                android:paddingStart="10dp"
+                                android:inputType="number"
+                                android:maxLength="10"
+                                android:layout_marginBottom="15dp"/>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <EditText
+                                    android:drawableStart="@drawable/pincode"
+                                    android:layout_width="130dp"
+                                    android:layout_height="40dp"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    android:background="@drawable/editbox_style"
+                                    android:hint="Pincode"
+                                    android:id="@+id/pincode"
+                                    android:paddingStart="10dp"
+                                    android:inputType="number"
+                                    android:maxLength="6"
+                                    android:layout_marginBottom="15dp"
+                                    android:layout_marginRight="20dp"/>
+                                <EditText
+                                    android:layout_width="150dp"
+                                    android:layout_height="40dp"
+                                    android:textSize="14sp"
+                                    android:id="@+id/state"
+                                    android:textStyle="bold"
+                                    android:background="@drawable/editbox_style"
+                                    android:hint="State"
+                                    android:paddingStart="10dp"
+                                    android:layout_marginBottom="15dp"/>
+                            </LinearLayout>
+                            <EditText
+                                android:drawableStart="@drawable/home_cart"
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:background="@drawable/editbox_style"
+                                android:hint="House No. /Name"
+                                android:id="@+id/Locality"
+                                android:paddingStart="10dp"
+                                android:layout_marginBottom="15dp"/>
+                            <EditText
+                                android:drawableStart="@drawable/home_cart"
+                                android:layout_width="300dp"
+                                android:layout_height="40dp"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:id="@+id/road"
+                                android:background="@drawable/editbox_style"
+                                android:hint="Road name"
+                                android:paddingStart="10dp"
+                                android:layout_marginBottom="15dp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Payment Method"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"/>
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/radiogrp">
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cash"
+                                android:text="Cash on Delivery"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/upi"
+                                android:text="Upi"/>
+                        </RadioGroup>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <Button
+
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Payment"
+            android:textColor="@color/white"
+            android:id="@+id/payment"
+            android:backgroundTint="#D54B1F"
+            android:drawableEnd="@drawable/right_arrow" />
+    </LinearLayout>
+
+
+</RelativeLayout>
