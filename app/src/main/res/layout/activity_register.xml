@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="#F0F2F5"
+    android:background="@drawable/backgroundfor_login_page"
     android:layout_height="match_parent"
     tools:context=".Register">
 
